@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Js</title>
+      <link href="2021/03/26/js/"/>
+      <url>2021/03/26/js/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+          <category> JS </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue-cli</title>
+      <link href="2021/03/26/vue-cli/"/>
+      <url>2021/03/26/vue-cli/</url>
+      
+        <content type="html"><![CDATA[<h4 id="这是Vue-cli"><a href="#这是Vue-cli" class="headerlink" title="这是Vue-cli"></a>这是Vue-cli</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Magisk</title>
+      <link href="2021/03/26/magisk/"/>
+      <url>2021/03/26/magisk/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vue学习记录</title>
+      <link href="2021/03/26/vue-xue-xi-ji-lu/"/>
+      <url>2021/03/26/vue-xue-xi-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vue学习记录"><a href="#Vue学习记录" class="headerlink" title="Vue学习记录"></a>Vue学习记录</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自建hexo+github</title>
+      <link href="2021/03/25/zi-jian-hexo-github/"/>
+      <url>2021/03/25/zi-jian-hexo-github/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一-必备"><a href="#一-必备" class="headerlink" title="一. 必备"></a>一. 必备</h2><ol><li>Nodejs</li><li>Git</li><li>github</li></ol><hr><p><em><span id="more"></span></em></p><h2 id="二-创建部署Hexo"><a href="#二-创建部署Hexo" class="headerlink" title="二. 创建部署Hexo"></a>二. 创建部署Hexo</h2><ol><li>创建一个空的文件夹用于存储，例：blog</li><li>NPM安装hexo：npm install -g(全局) hexo</li><li>测试：hexo </li></ol><hr><h2 id="三-初始化Hexo"><a href="#三-初始化Hexo" class="headerlink" title="三. 初始化Hexo"></a>三. 初始化Hexo</h2><ol><li>进入创建的文件夹blog</li><li>初始化命令：<code> hexo init</code></li><li>构建Hexo：<code>hexo g</code></li><li>启动Hexo：<code>hexo s</code></li><li>进入：<code>localhost:4000</code></li></ol><hr><h2 id="四-部署Hexo到Github"><a href="#四-部署Hexo到Github" class="headerlink" title="四. 部署Hexo到Github"></a>四. 部署Hexo到Github</h2><ol><li><p>创建Github账号以及仓库(仓库名称要以github.io为结尾)。</p></li><li><p>win10创建密钥：ssh-keygen -t rsa -C “GitHub 邮箱”。</p></li><li><p>win10查看密钥：cat ~/.ssh/id_rsa.pub</p></li><li><p>github配置密钥：账号 -&gt; 设置 -&gt; SSH and GPG keys</p></li><li><p>修改本地配置文件：_config.yml -&gt; 末尾 -&gt; </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line"><span class="attr">repo:</span> <span class="string">github仓库地址</span></span><br></pre></td></tr></table></figure></li><li><p>开始提交到github：<code>hexo d</code></p></li><li><p>访问链接：仓库-&gt; Settings -&gt; GitHub Pages 选择分支，目录。保存即可出现链接</p></li></ol><hr><h2 id="五-注意事项"><a href="#五-注意事项" class="headerlink" title="五. 注意事项"></a>五. 注意事项</h2><ol><li><p>部署成功后访问github.io出现图片加载失败：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">_config.yml</span> <span class="string">-&gt;</span> <span class="string">URL注释下</span> <span class="string">-&gt;</span> <span class="attr">root:</span> <span class="string">/仓库名称</span></span><br></pre></td></tr></table></figure></li><li><p>更改主题：theme: 主题名</p></li><li><p>清除：<code>hexo clean</code></p></li><li><p>重新构建部署：<code>hexo g -d </code></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> other </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
