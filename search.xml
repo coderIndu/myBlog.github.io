@@ -5,8 +5,8 @@
     
     <entry>
       <title>Js</title>
-      <link href="2021/03/26/js/"/>
-      <url>2021/03/26/js/</url>
+      <link href="2021/03/26/Js/"/>
+      <url>2021/03/26/Js/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -47,8 +47,8 @@
     
     <entry>
       <title>Magisk</title>
-      <link href="2021/03/26/magisk/"/>
-      <url>2021/03/26/magisk/</url>
+      <link href="2021/03/26/Magisk/"/>
+      <url>2021/03/26/Magisk/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -66,8 +66,8 @@
     
     <entry>
       <title>Vue学习记录</title>
-      <link href="2021/03/26/vue-xue-xi-ji-lu/"/>
-      <url>2021/03/26/vue-xue-xi-ji-lu/</url>
+      <link href="2021/03/26/Vue%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <url>2021/03/26/Vue%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
       
         <content type="html"><![CDATA[<h2 id="Vue学习记录"><a href="#Vue学习记录" class="headerlink" title="Vue学习记录"></a>Vue学习记录</h2>]]></content>
       
@@ -87,8 +87,8 @@
     
     <entry>
       <title>自建hexo+github</title>
-      <link href="2021/03/25/zi-jian-hexo-github/"/>
-      <url>2021/03/25/zi-jian-hexo-github/</url>
+      <link href="2021/03/25/%E8%87%AA%E5%BB%BAhexo+github/"/>
+      <url>2021/03/25/%E8%87%AA%E5%BB%BAhexo+github/</url>
       
         <content type="html"><![CDATA[<h2 id="一-必备"><a href="#一-必备" class="headerlink" title="一. 必备"></a>一. 必备</h2><ol><li>Nodejs</li><li>Git</li><li>github</li></ol><hr><p><em><span id="more"></span></em></p><h2 id="二-创建部署Hexo"><a href="#二-创建部署Hexo" class="headerlink" title="二. 创建部署Hexo"></a>二. 创建部署Hexo</h2><ol><li>创建一个空的文件夹用于存储，例：blog</li><li>NPM安装hexo：npm install -g(全局) hexo</li><li>测试：hexo </li></ol><hr><h2 id="三-初始化Hexo"><a href="#三-初始化Hexo" class="headerlink" title="三. 初始化Hexo"></a>三. 初始化Hexo</h2><ol><li>进入创建的文件夹blog</li><li>初始化命令：<code> hexo init</code></li><li>构建Hexo：<code>hexo g</code></li><li>启动Hexo：<code>hexo s</code></li><li>进入：<code>localhost:4000</code></li></ol><hr><h2 id="四-部署Hexo到Github"><a href="#四-部署Hexo到Github" class="headerlink" title="四. 部署Hexo到Github"></a>四. 部署Hexo到Github</h2><ol><li><p>创建Github账号以及仓库(仓库名称要以github.io为结尾)。</p></li><li><p>win10创建密钥：ssh-keygen -t rsa -C “GitHub 邮箱”。</p></li><li><p>win10查看密钥：cat ~/.ssh/id_rsa.pub</p></li><li><p>github配置密钥：账号 -&gt; 设置 -&gt; SSH and GPG keys</p></li><li><p>修改本地配置文件：_config.yml -&gt; 末尾 -&gt; </p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span><span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">'git'</span><span class="token key atrule">repo</span><span class="token punctuation">:</span> github仓库地址<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li><p>开始提交到github：<code>hexo d</code></p></li><li><p>访问链接：仓库-&gt; Settings -&gt; GitHub Pages 选择分支，目录。保存即可出现链接</p></li></ol><hr><h2 id="五-注意事项"><a href="#五-注意事项" class="headerlink" title="五. 注意事项"></a>五. 注意事项</h2><ol><li><p>部署成功后访问github.io出现图片加载失败：</p><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token key atrule">_config.yml -&gt; URL注释下 -&gt; root</span><span class="token punctuation">:</span> /仓库名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>更改主题：theme: 主题名</p></li><li><p>清除：<code>hexo clean</code></p></li><li><p>重新构建部署：<code>hexo g -d </code></p></li></ol>]]></content>
       
