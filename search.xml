@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Vue路由</title>
+      <link href="2021/03/29/Vue%E8%B7%AF%E7%94%B1/"/>
+      <url>2021/03/29/Vue%E8%B7%AF%E7%94%B1/</url>
+      
+        <content type="html"><![CDATA[<h4 id="一、Vue中的路由"><a href="#一、Vue中的路由" class="headerlink" title="一、Vue中的路由"></a>一、Vue中的路由</h4><ol><li><p>定义：通过互联的网络把信息从源地址传输道目的地址的活动。</p><ul><li>IP地址：标识</li><li>映射表：mac地址，唯一标识</li><li>路由器：管理ip</li></ul></li><li><p>什么是前端渲染，什么是后端渲染？</p><ol><li><p>后端渲染：<code>jsp/php</code>，比较混乱。</p></li><li><p>前后端分离阶段：<code>Ajax</code></p><ul><li><p>后端只负责提供数据，不负责任何阶段的内容。</p><img src="C:\Users\skyblue\AppData\Roaming\Typora\typora-user-images\image-20210329124814619.png" alt="image-20210329124814619" style="zoom:50%;"></li></ul></li><li><p>SPA页面(单页面富应用)</p><ol><li>整个网页只有一个html页面</li><li>特点：在前后端分离的基础上加了一层前端路由，前端来维护一套路由规则</li><li>前端路由核心：<ul><li><strong>改变URL，但是页面不进行整体的刷新</strong></li></ul></li></ol></li></ol></li></ol><hr><h4 id="二、-vue-router"><a href="#二、-vue-router" class="headerlink" title="二、 vue-router"></a>二、 vue-router</h4><ol><li><p>使用步骤</p><ol><li><p>导入路由对象，并且调用Vue.use(VueRouter)</p><ul><li>安装：<code>yarn add vue-router --save</code></li><li>创建router文件夹，在其中创建index.js文件。</li></ul></li><li><p>创建路由实例，并且传入路由映射配置。</p></li><li><p>在Vue实例中挂载创建的路由实例</p><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 导入路由相关的配置</span><span class="token keyword">import</span> VueRouter <span class="token keyword">from</span> <span class="token string">'vue-router'</span><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token comment">// 1.通过Vue.use(插件)，安装插件</span>Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span><span class="token comment">// 2.设置路由映射关系</span><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token comment">// 3.创建实例</span><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>    routes<span class="token punctuation">,</span>    mode<span class="token operator">:</span> <span class="token string">'history'</span> <span class="token comment">// 使用history模式。去除#</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token comment">// 4.导出</span><span class="token keyword">export</span> <span class="token keyword">default</span> router<span class="token comment">// 5.在main.js导入router</span><span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">'./router'</span><span class="token operator">...</span><span class="token punctuation">(</span><span class="token punctuation">{</span>    router<span class="token punctuation">,</span>    <span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol></li><li><p>routes映射对象：</p><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>    <span class="token punctuation">{</span>        path<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span><span class="token comment">// 路由地址</span>        component<span class="token operator">:</span> <span class="token keyword">null</span> <span class="token comment">// 组件</span>    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>        path<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>        redirect<span class="token operator">:</span> <span class="token string">''</span> <span class="token comment">// 重定向路由地址,一般用于配置默认页面</span>    <span class="token punctuation">}</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>App.vue中使用：</p><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">// 方式一：&lt;router-link&gt;&lt;/router-link&gt;,最终被渲染成&lt;a&gt;&lt;/a&gt;标签&lt;router-link to="/home"&gt;&lt;/router-link&gt; // 方式二：绑定点击事件// 必须使用&lt;router-view&gt;&lt;/router-view&gt; // 渲染router<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li><ol><li>to: 跳转 </li><li>tag: 指定渲染成什么组件</li><li>replace：关闭返回</li></ol></li></ul><p>​    </p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue-router-tabbar</title>
       <link href="2021/03/27/Vue-router-tabbar/"/>
       <url>2021/03/27/Vue-router-tabbar/</url>
