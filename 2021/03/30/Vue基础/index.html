@@ -23,28 +23,35 @@
     var CONFIG = {"hostname":"www.dudu2.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"Available values":"flat","style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Dudulu">
-<meta property="og:url" content="https://www.dudu2.xyz/index.html">
+  <meta name="description" content="1. 声明 创建一个Vue实例： var app2 &#x3D; new Vue({ 	el: &#39;#app&#39;,     data: {         message: &#39;&#39;     } }) 实例的生命周期钩子：  created：在实例被创建之后执行  mounted：在实例被挂载的时候执行  updated：在实例被更新时执行  destroyed：在实例被销毁后执行  不要在选项 property">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue基础">
+<meta property="og:url" content="https://www.dudu2.xyz/2021/03/30/Vue%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Dudulu">
+<meta property="og:description" content="1. 声明 创建一个Vue实例： var app2 &#x3D; new Vue({ 	el: &#39;#app&#39;,     data: {         message: &#39;&#39;     } }) 实例的生命周期钩子：  created：在实例被创建之后执行  mounted：在实例被挂载的时候执行  updated：在实例被更新时执行  destroyed：在实例被销毁后执行  不要在选项 property">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cn.vuejs.org/images/lifecycle.png">
+<meta property="article:published_time" content="2021-03-30T07:42:29.000Z">
+<meta property="article:modified_time" content="2021-03-31T07:38:42.533Z">
 <meta property="article:author" content="dudulu">
+<meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cn.vuejs.org/images/lifecycle.png">
 
-<link rel="canonical" href="https://www.dudu2.xyz/">
+<link rel="canonical" href="https://www.dudu2.xyz/2021/03/30/Vue%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Dudulu</title>
+  <title>Vue基础 | Dudulu</title>
   
 
 
@@ -195,9 +202,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -213,10 +221,9 @@
       <meta itemprop="name" content="Dudulu">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/30/Vue%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Vue基础</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Vue基础
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -259,7 +266,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-声明"><a href="#1-声明" class="headerlink" title="1. 声明"></a>1. 声明</h4><ol>
+        <h4 id="1-声明"><a href="#1-声明" class="headerlink" title="1. 声明"></a>1. 声明</h4><ol>
 <li><p>创建一个Vue实例：</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">var</span> app2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
 	el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
@@ -612,585 +619,33 @@ data: {
 <li></li>
 </ol>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Vue/" rel="tag"># Vue</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.dudu2.xyz/2021/03/29/Vue%E8%B7%AF%E7%94%B1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ys.jpg">
-      <meta itemprop="name" content="dudulu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dudulu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/29/Vue%E8%B7%AF%E7%94%B1/" class="post-title-link" itemprop="url">Vue路由</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-29 12:17:05" itemprop="dateCreated datePublished" datetime="2021-03-29T12:17:05+08:00">2021-03-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-31 15:37:12" itemprop="dateModified" datetime="2021-03-31T15:37:12+08:00">2021-03-31</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="一、Vue中的路由"><a href="#一、Vue中的路由" class="headerlink" title="一、Vue中的路由"></a>一、Vue中的路由</h4><ol>
-<li><p>定义：通过互联的网络把信息从源地址传输道目的地址的活动。</p>
-<ul>
-<li>IP地址：标识</li>
-<li>映射表：mac地址，唯一标识</li>
-<li>路由器：管理ip</li>
-</ul>
-</li>
-<li><p>什么是前端渲染，什么是后端渲染？</p>
-<ol>
-<li><p>后端渲染：<code>jsp/php</code>，比较混乱。</p>
-</li>
-<li><p>前后端分离阶段：<code>Ajax</code></p>
-<ul>
-<li><p>后端只负责提供数据，不负责任何阶段的内容。</p>
-<img src="C:\Users\skyblue\AppData\Roaming\Typora\typora-user-images\image-20210329124814619.png" alt="image-20210329124814619" style="zoom:50%;"></li>
-</ul>
-</li>
-<li><p>SPA页面(单页面富应用)</p>
-<ol>
-<li>整个网页只有一个html页面</li>
-<li>特点：在前后端分离的基础上加了一层前端路由，前端来维护一套路由规则</li>
-<li>前端路由核心：<ul>
-<li><strong>改变URL，但是页面不进行整体的刷新</strong></li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
-<h4 id="二、-vue-router"><a href="#二、-vue-router" class="headerlink" title="二、 vue-router"></a>二、 vue-router</h4><ol>
-<li><p>使用步骤</p>
-<ol>
-<li><p>导入路由对象，并且调用Vue.use(VueRouter)</p>
-<ul>
-<li>安装：<code>yarn add vue-router --save</code></li>
-<li>创建router文件夹，在其中创建index.js文件。</li>
-</ul>
-</li>
-<li><p>创建路由实例，并且传入路由映射配置。</p>
-</li>
-<li><p>在Vue实例中挂载创建的路由实例</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 导入路由相关的配置</span>
-<span class="token keyword">import</span> VueRouter <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
-<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-
-<span class="token comment">// 1.通过Vue.use(插件)，安装插件</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span>
-
-<span class="token comment">// 2.设置路由映射关系</span>
-<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-
-<span class="token comment">// 3.创建实例</span>
-<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    routes<span class="token punctuation">,</span>
-    mode<span class="token operator">:</span> <span class="token string">'history'</span> <span class="token comment">// 使用history模式。去除#</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token comment">// 4.导出</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> router
-<span class="token comment">// 5.在main.js导入router</span>
-<span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">'./router'</span>
-<span class="token operator">...</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    router<span class="token punctuation">,</span>
-    <span class="token operator">...</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ol>
-</li>
-<li><p>routes映射对象：</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-        path<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>	<span class="token comment">// 路由地址</span>
-        component<span class="token operator">:</span> <span class="token keyword">null</span> <span class="token comment">// 组件</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
-        path<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-        redirect<span class="token operator">:</span> <span class="token string">''</span> <span class="token comment">// 重定向路由地址,一般用于配置默认页面</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>App.vue中使用：</p>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">// 方式一：&lt;router-link&gt;&lt;/router-link&gt;,最终被渲染成&lt;a&gt;&lt;/a&gt;标签
-&lt;router-link to="/home"&gt;&lt;/router-link&gt; 
-// 方式二：绑定点击事件
-// 必须使用
-&lt;router-view&gt;&lt;/router-view&gt; // 渲染router<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li><ol>
-<li>to: 跳转 </li>
-<li>tag: 指定渲染成什么组件</li>
-<li>replace：关闭返回</li>
-</ol>
-</li>
-<li><p>路由中：</p>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">// index.js文件
-...
-linkActiveClass: '' // 统一修改属性<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-</ul>
-</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.dudu2.xyz/2021/03/27/Vue-router-tabbar/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ys.jpg">
-      <meta itemprop="name" content="dudulu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dudulu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/27/Vue-router-tabbar/" class="post-title-link" itemprop="url">Vue-router-tabbar</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-27 22:33:18" itemprop="dateCreated datePublished" datetime="2021-03-27T22:33:18+08:00">2021-03-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-28 23:36:08" itemprop="dateModified" datetime="2021-03-28T23:36:08+08:00">2021-03-28</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="一-banner模块的编写"><a href="#一-banner模块的编写" class="headerlink" title="一. banner模块的编写"></a>一. banner模块的编写</h4><ol>
-<li><p>创建tabbar组件，在tabbar组件中创建插槽slot</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"app"</span><span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"tabbar"</span><span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>slot<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>slot<span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/27/Vue-router-tabbar/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.dudu2.xyz/2021/03/26/vue-cli/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ys.jpg">
-      <meta itemprop="name" content="dudulu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dudulu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/26/vue-cli/" class="post-title-link" itemprop="url">vue-cli</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-03-26 17:06:40 / 修改时间：18:49:55" itemprop="dateCreated datePublished" datetime="2021-03-26T17:06:40+08:00">2021-03-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="这是Vue-cli"><a href="#这是Vue-cli" class="headerlink" title="这是Vue-cli"></a>这是Vue-cli</h4>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.dudu2.xyz/2021/03/26/Magisk/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ys.jpg">
-      <meta itemprop="name" content="dudulu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dudulu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/26/Magisk/" class="post-title-link" itemprop="url">Magisk</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-03-26 13:32:27 / 修改时间：13:33:29" itemprop="dateCreated datePublished" datetime="2021-03-26T13:32:27+08:00">2021-03-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.dudu2.xyz/2021/03/26/Vue%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ys.jpg">
-      <meta itemprop="name" content="dudulu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dudulu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/26/Vue%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">Vue学习记录</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-03-26 13:20:14 / 修改时间：18:50:04" itemprop="dateCreated datePublished" datetime="2021-03-26T13:20:14+08:00">2021-03-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Vue学习记录"><a href="#Vue学习记录" class="headerlink" title="Vue学习记录"></a>Vue学习记录</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.dudu2.xyz/2021/03/25/%E8%87%AA%E5%BB%BAhexo+github/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ys.jpg">
-      <meta itemprop="name" content="dudulu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dudulu">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/25/%E8%87%AA%E5%BB%BAhexo+github/" class="post-title-link" itemprop="url">自建hexo+github</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-25 17:55:37" itemprop="dateCreated datePublished" datetime="2021-03-25T17:55:37+08:00">2021-03-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-26 18:50:34" itemprop="dateModified" datetime="2021-03-26T18:50:34+08:00">2021-03-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/other/" itemprop="url" rel="index"><span itemprop="name">other</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="一-必备"><a href="#一-必备" class="headerlink" title="一. 必备"></a>一. 必备</h2><ol>
-<li>Nodejs</li>
-<li>Git</li>
-<li>github</li>
-</ol>
-<hr>
-<p><em></em></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/25/%E8%87%AA%E5%BB%BAhexo+github/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/29/Vue%E8%B7%AF%E7%94%B1/" rel="prev" title="Vue路由">
+      <i class="fa fa-chevron-left"></i> Vue路由
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -1243,6 +698,7 @@ linkActiveClass: '' // 统一修改属性<span aria-hidden="true" class="line-nu
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%A3%B0%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">1. 声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">2. 模板语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7"><span class="nav-number">3.</span> <span class="nav-text">3. 计算属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E4%BE%A6%E5%90%AC%E5%99%A8"><span class="nav-number">4.</span> <span class="nav-text">4. 侦听器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-Class-%E4%B8%8E-Style-%E7%BB%91%E5%AE%9A"><span class="nav-number">5.</span> <span class="nav-text">5. Class 与 Style 绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93"><span class="nav-number">6.</span> <span class="nav-text">6. 条件渲染</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93"><span class="nav-number">7.</span> <span class="nav-text">7. 列表渲染</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86"><span class="nav-number">8.</span> <span class="nav-text">8. 事件处理</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
