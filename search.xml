@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Shell部分了解</title>
+      <link href="2021/04/02/Shell%E9%83%A8%E5%88%86%E4%BA%86%E8%A7%A3/"/>
+      <url>2021/04/02/Shell%E9%83%A8%E5%88%86%E4%BA%86%E8%A7%A3/</url>
+      
+        <content type="html"><![CDATA[<h4 id="部分赋值语法"><a href="#部分赋值语法" class="headerlink" title="部分赋值语法"></a>部分赋值语法</h4><ol><li><p>变量=$(操作)</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ListScripts=$(cat $readList2;ls /ql/ql/scripts | grep  "^wh" &amp;&amp; ls /ql/ql/scripts | grep "^monk")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>变量=$(带正则表达式过滤)</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ListDiyScripts=$(ls /ql/ql/scripts | grep  "^wh" &amp;&amp; ls /ql/ql/scripts | grep "^monk")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>读取用户输入</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># ...read count # 读取一个输入read -p "请输入:"# 指定提示符,或者指定多个变量read -t # 等待的秒数array=$* # 传递所有参数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>循环和条件和数组</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">for i in ${array[@]} # 循环数组do if [ "$name" == "${!#}" ]; then break; fi # ${!#}是否是最后一个函数接收的参数    if [ "${name#*.}" != "js" ]; then name=${name%.}.js; fi # 是否后缀名是js    if [ -f "$readList1/$name" ] # 当前文件夹是否存在该文件    if [ -d "$filePath" ] # 对应的文件夹中是否存在查找的文件夹    elif then 内容    fi ${jsName#*_} # "_"当前行后面的所有内容arr[${#arr[*]}]=${name} # 往数组后面添加元素done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>case语句</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">case $input in'a') # 对应内容run $ListScripts all # 输入a 则执行该命令;; # 切记用双分号结尾esac # 结尾。if、case语句都是这样反向包围<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>其他的乱七八糟z</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">allfile=`ls $filePath` # 将执行语句的内容复制给allfile# 利用grep + ${name#/%*中正则} 筛选正则之后或者之前的内容text=`cat $filePath/${arr[-1]} | grep "互助码】"`# echo $textfor hzm in $textdoarrList[${#arrList[*]}]=${hzm#*互助码】}doneecho $format${arrList[@]}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+          <category> Shell </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue基础</title>
       <link href="2021/03/30/Vue%E5%9F%BA%E7%A1%80/"/>
       <url>2021/03/30/Vue%E5%9F%BA%E7%A1%80/</url>
