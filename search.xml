@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>英语单词-4.3</title>
+      <link href="2021/04/03/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D-4-3/"/>
+      <url>2021/04/03/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D-4-3/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>prosecute:    vt. 检举，贯彻，从事。 vi. 起诉，告发。</p><p>prosecutor    检查官</p></li><li><p>transition：n. 过渡，转变。</p><span id="more"></span></li><li><p>casualty：n. 意外事故，伤亡人员，急诊。</p></li><li><p>permeate：n. 渗透，弥漫。</p></li><li><p>refund：n. 退款     v.退款，退还。</p></li><li><p>linger：vi. 徘徊    vt. 消磨</p></li><li><p>converge：vt. 使汇聚    vi.聚集，靠拢。</p></li><li><p>associate：v. 联想，使关联。</p></li><li><p>royalty：n. 皇室，王权。</p></li><li><p>transmit：vi. 运输。   vt. 传输，发射，遗传。</p></li><li><p>mock：v. 嘲笑，(通过模仿)嘲弄。</p></li><li><p>incentive：n. 动机，刺激。</p></li><li><p>overwhelm：vt. 淹没；压倒；受打击；压垮。</p></li><li><p>reliable：adj. 可靠的。  n. 可靠的人。</p></li><li><p>anticipate：v. 预料，预期，预见。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> English </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> English </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Shell部分了解</title>
       <link href="2021/04/02/Shell%E9%83%A8%E5%88%86%E4%BA%86%E8%A7%A3/"/>
       <url>2021/04/02/Shell%E9%83%A8%E5%88%86%E4%BA%86%E8%A7%A3/</url>
       
-        <content type="html"><![CDATA[<h4 id="部分赋值语法"><a href="#部分赋值语法" class="headerlink" title="部分赋值语法"></a>部分赋值语法</h4><ol><li><p>变量=$(操作)</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ListScripts=$(cat $readList2;ls /ql/ql/scripts | grep  "^wh" &amp;&amp; ls /ql/ql/scripts | grep "^monk")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>变量=$(带正则表达式过滤)</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ListDiyScripts=$(ls /ql/ql/scripts | grep  "^wh" &amp;&amp; ls /ql/ql/scripts | grep "^monk")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>读取用户输入</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># ...read count # 读取一个输入read -p "请输入:"# 指定提示符,或者指定多个变量read -t # 等待的秒数array=$* # 传递所有参数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>循环和条件和数组</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">for i in ${array[@]} # 循环数组do if [ "$name" == "${!#}" ]; then break; fi # ${!#}是否是最后一个函数接收的参数    if [ "${name#*.}" != "js" ]; then name=${name%.}.js; fi # 是否后缀名是js    if [ -f "$readList1/$name" ] # 当前文件夹是否存在该文件    if [ -d "$filePath" ] # 对应的文件夹中是否存在查找的文件夹    elif then 内容    fi ${jsName#*_} # "_"当前行后面的所有内容arr[${#arr[*]}]=${name} # 往数组后面添加元素done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>case语句</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">case $input in'a') # 对应内容run $ListScripts all # 输入a 则执行该命令;; # 切记用双分号结尾esac # 结尾。if、case语句都是这样反向包围<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>其他的乱七八糟z</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">allfile=`ls $filePath` # 将执行语句的内容复制给allfile# 利用grep + ${name#/%*中正则} 筛选正则之后或者之前的内容text=`cat $filePath/${arr[-1]} | grep "互助码】"`# echo $textfor hzm in $textdoarrList[${#arrList[*]}]=${hzm#*互助码】}doneecho $format${arrList[@]}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
+        <content type="html"><![CDATA[<h4 id="部分赋值语法"><a href="#部分赋值语法" class="headerlink" title="部分赋值语法"></a>部分赋值语法</h4><ol><li><p>变量=$(操作)</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ListScripts=$(cat $readList2;ls /ql/ql/scripts | grep  "^wh" &amp;&amp; ls /ql/ql/scripts | grep "^monk")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><span id="more"></span><ol start="2"><li><p>变量=$(带正则表达式过滤)</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ListDiyScripts=$(ls /ql/ql/scripts | grep  "^wh" &amp;&amp; ls /ql/ql/scripts | grep "^monk")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>读取用户输入</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># ...read count # 读取一个输入read -p "请输入:"# 指定提示符,或者指定多个变量read -t # 等待的秒数array=$* # 传递所有参数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>循环和条件和数组</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">for i in ${array[@]} # 循环数组do if [ "$name" == "${!#}" ]; then break; fi # ${!#}是否是最后一个函数接收的参数    if [ "${name#*.}" != "js" ]; then name=${name%.}.js; fi # 是否后缀名是js    if [ -f "$readList1/$name" ] # 当前文件夹是否存在该文件    if [ -d "$filePath" ] # 对应的文件夹中是否存在查找的文件夹    elif then 内容    fi ${jsName#*_} # "_"当前行后面的所有内容arr[${#arr[*]}]=${name} # 往数组后面添加元素done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>case语句</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">case $input in'a') # 对应内容run $ListScripts all # 输入a 则执行该命令;; # 切记用双分号结尾esac # 结尾。if、case语句都是这样反向包围<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>其他的乱七八糟z</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">allfile=`ls $filePath` # 将执行语句的内容复制给allfile# 利用grep + ${name#/%*中正则} 筛选正则之后或者之前的内容text=`cat $filePath/${arr[-1]} | grep "互助码】"`# echo $textfor hzm in $textdoarrList[${#arrList[*]}]=${hzm#*互助码】}doneecho $format${arrList[@]}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
       
       
       <categories>
